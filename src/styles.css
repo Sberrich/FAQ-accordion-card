@@ -1,0 +1,12 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .question {
+        @apply flex items-start justify-between py-4 text-textdarkgraybleu font-kumbh font-semibold hover:text-Textverydark;
+    }
+}
