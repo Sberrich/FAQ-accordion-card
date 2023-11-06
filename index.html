@@ -8,39 +8,7 @@
   <link rel="stylesheet" href="./public/output.css">
   <title>FAQ Accordion Card</title>
 </head>
-<style scoped>
-  .rotated {
-    transition: transform 0.5s ease;
-    transform: rotate(-180deg);
-  }
 
-  .unrotated {
-    transition: transform 0.5s ease;
-    transform: rotate(0deg);
-  }
-
-  .bg {
-    transform: translate(-60%, -72%);
-    object-fit: cover;
-  }
-
-  .bgs {
-    position: inherit;
-  }
-
-  .women {
-    transform: translateX(-25%);
-  }
-
-  .womens {
-    position: absolute;
-    transform: translateY(-60%);
-  }
-
-  .box {
-    transform: translate(-80%, -95%);
-  }
-</style>
 
 <body>
   <div
@@ -64,87 +32,87 @@
           <aside class="py-8 text-4xl font-kumbh font-extrabold text-black">
             <span>FAQ</span>
           </aside>
-          <aside >
+          <aside>
             <div class="flex items-center justify-between gap-4">
               <div class="flex flex-col items-start justify-between py-2 ">
-                <p class="question">
+                <p class="question" id="Q1">
                   How many team members can i invite?
                 </p>
-                <p class="text-sm text-textdarkgraybleu font-kumbh hidden">
-                  You can invite up to 2 additional users on the Free plan. There is no limit on
+                <p class="text-sm text-textdarkgraybleu font-kumbh hidden text-start" id="A1">
+                  You can invite up to 2 additional users on the Free plan. There is no limit on <br>
                   team members for the Premium plan.
                 </p>
-              
+
               </div>
-              <svg  width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+              <svg id="flip1" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
               </svg>
-              
+
             </div>
             <hr class="bg-divider w-full" />
-           <div class="flex items-center justify-between gap-4">
-            <div class="flex flex-col items-start justify-between py-2 ">
-                <p class="question">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex flex-col items-start justify-between py-2 ">
+                <p class="question" id="Q2">
                   What is the maximum file upload size?
                 </p>
-                <p class="hidden">
+                <p class="text-sm text-textdarkgraybleu font-kumbh hidden" id="A2">
                   No more than 2GB. All files in your account <br> must fit your allotted storage space.
                 </p>
-              
+
               </div>
-              <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+              <svg id="flip2" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
               </svg>
-          
+
             </div>
             <hr class="bg-divider w-full" />
-           <div class="flex items-center justify-between gap-4">
-             <div class="flex flex-col items-start justify-between py-2 ">
-                <p class="question">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex flex-col items-start justify-between py-2 ">
+                <p class="question" id="Q3">
                   How do I reset my password?
                 </p>
-                <p class="hidden">
+                <p class="text-sm text-textdarkgraybleu font-kumbh hidden" id="A3">
                   Click “Forgot password” from the login page or “Change password” from your profile page. <br> A reset
                   link will be emailed to you.
                 </p>
-              
+
               </div>
-              <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+              <svg id="flip3" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
               </svg>
             </div>
             <hr class="bg-divider w-full" />
 
-           <div class="flex items-center justify-between gap-4">
-             <div class="flex flex-col items-start justify-between py-2 ">
-                <p class="question">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex flex-col items-start justify-between py-2 ">
+                <p class="question" id="Q4">
                   Can I cancel my subscription?
                 </p>
-                <p class="hidden">
+                <p class="text-sm text-textdarkgraybleu font-kumbh hidden" id="A4">
                   Yes! Send us a message and we’ll process your request no questions asked.
                 </p>
-             
+
               </div>
-              <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+              <svg id="flip4" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
               </svg>
-           
+
             </div>
             <hr class="bg-divider w-full" />
-           <div class="flex items-center justify-between gap-4">
-             <div class="flex flex-col items-start justify-between py-2 ">
-                <p class="question">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex flex-col items-start justify-between py-2 ">
+                <p class="question" id="Q5">
                   Do you provide additional support?
                 </p>
-                <p class="hidden">
+                <p class="text-sm text-textdarkgraybleu font-kumbh hidden " id="A5">
                   Chat and email support is available 24/7. Phone lines are open during normal business hours.
                 </p>
-          
+
               </div>
-              <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+              <svg id="flip5" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
               </svg>
-           
+
             </div>
             <hr class="bg-divider w-full" />
           </aside>
@@ -153,5 +121,6 @@
     </main>
   </div>
 </body>
+<script src="./src/script.js"></script>
 
 </html>
